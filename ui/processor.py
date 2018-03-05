@@ -218,7 +218,7 @@ class FontProcessor(object):
         used_chars = []
 
         current_record = None
-        for key in sorted(liga_keys):
+        for key in sorted(liga_keys, reverse=True):
             start_char = key[0]
 
             if start_char not in used_chars:
